@@ -7,7 +7,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+ }
 
 img {
   width: 100%; 
@@ -16,7 +17,39 @@ img {
 .container {
   margin: auto;
   padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  /* width: 100%;
+  height: 100%; */
+ }
+
+/*******************************EFFECT*************************************/
+.petal-stage-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  /* background-color: #fff; */
+}
+.petal-model {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.petal-model-s {
+  width: 14px;
+  z-index: 99998;
+}
+.petal-model-m {
+  width: 22px;
+  z-index: 99999;
+}
+.petal-model-l {
+  width: 30px;
+  z-index: 100001;
+}
 
 /***********************************UNIVERSAL STYLES***********************************/
 body {
@@ -35,13 +68,13 @@ body {
 
 .accent-text {
   font-family: "Dancing Script", cursive;
-  color: #000099; }
+  color: #E5554F; }
 
 .active {
-  color: #000099; }
+  color: #E5554F; }
 
 .is-checked {
-  color: #000099; }
+  color: #E5554F; }
 
 h2 {
   margin-bottom: 20px; }
@@ -76,7 +109,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000099; }
+  background: #E5554F; }
 
 /***********************************PRELOAD PAGE***********************************/
 #preload-overlay {
@@ -106,8 +139,8 @@ a {
 .loader1 {
   width: 100px;
   height: 100px;
-  border-top: 5px solid #000099;
-  border-bottom: 5px solid #000099;
+  border-top: 5px solid #E5554F;
+  border-bottom: 5px solid #E5554F;
   -webkit-animation: clockwisespin 2s linear infinite;
   animation: clockwisespin 2s linear infinite; }
 
@@ -173,7 +206,7 @@ a {
   padding: 20px 0 10px 0;
   z-index: 900;
   background: #fff;
-  border-bottom: 1px #000099 solid;
+  border-bottom: 1px #E5554F solid;
   overflow: hidden; }
   @media screen and (max-width: 760px) {
     #main-header {
@@ -194,7 +227,7 @@ a {
   line-height: 1;
   font-size: 27pt;
   font-weight: bold;
-  color: #000099;
+  color: #E5554F;
   font-family: "Dancing Script", cursive; }
   @media screen and (max-width: 760px) {
     .logo {
@@ -235,9 +268,9 @@ a {
       -o-transition: color 0.3s ease;
       transition: color 0.3s ease; }
     #main-header nav ul .active {
-      color: #000099; }
+      color: #E5554F; }
     #main-header nav ul a:hover {
-      color: #000099; }
+      color: #E5554F; }
 
 .mobile-toggle {
   display: none;
@@ -289,33 +322,30 @@ a {
   transform: translate(-50%, -50%); }
   .hero-content h1 {
     font-size: 50px;
-    color: #fff;
+    color: rgb(252, 133, 129);
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     margin-top: 30px;
     margin-bottom: 10px; }
   .hero-content h2 {
     font-size: 30px;
-    color: #bfbfbf; }
+    color: #E5554F; }
   .hero-content .download {
-    color: #bfbfbf;
+    color: rgb(252, 133, 129);
     background: none;
-    border: 2px #bfbfbf solid;
+    border: 2px #E5554F solid;
     border-radius: 1000px;
     padding: 10px;
     -webkit-transition: border-color 0.3s ease;
     -o-transition: border-color 0.3s ease;
     transition: border-color 0.3s ease;
-    cursor: pointer; }
-    .hero-content .download a {
-      color: #bfbfbf;
-      font-size: 16px; }
-    .hero-content .download:hover {
-      border-color: #bfbfbf; }
+    cursor: pointer; 
+}
 
 .hero-content img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 3px #bfbfbf solid; }
+  border: 3px  rgb(252, 133, 129) solid; }
   @media screen and (max-width: 768px) {
     .hero-content img {
       width: 200px;
@@ -356,7 +386,7 @@ a {
     transition: color 0.3s ease;
     cursor: pointer; }
     .about-social .fab:hover, .about-social .far:hover {
-      color: #000099; }
+      color: #E5554F; }
 
 .skill-progress-container p {
   color: #454545; }
@@ -382,7 +412,7 @@ a {
 .inner-percent {
   height: inherit;
   width: 0;
-  background: #000099;
+  background: #E5554F;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear; }
@@ -406,7 +436,7 @@ a {
 .service-block {
   padding: 20px; }
   .service-block .icon {
-    color: #000099;
+    color: #E5554F;
     font-size: 40px;
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -457,7 +487,7 @@ a {
         display: block;
         margin-top: 10px; } }
   #filter-btn .button {
-    border: 1px #a3a3a3 solid;
+    border: 1px #E5554F solid;
     padding: 10px 30px 10px 30px;
     border-radius: 500px;
     background: none;
