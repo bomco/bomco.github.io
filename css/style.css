@@ -420,13 +420,22 @@ a {
 .inner-percent-animate {
   width: 100%; }
 
-.development {
+.java {
   width: 63%; }
 
-.design {
+.spring {
   width: 86%; }
 
-.marketing {
+.js {
+  width: 86%; }
+
+.servlet {
+  width: 79%; }
+
+.angler {
+  width: 79%; }
+
+.database {
   width: 79%; }
 
 /***********************************SERVICES STYLES***********************************/
